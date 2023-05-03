@@ -18,7 +18,6 @@ import {
 import { Switch } from "react-native-switch";
 import { SafeAreaView } from "react-native-safe-area-context";
 import * as Location from "expo-location";
-import DateTimePicker from "@react-native-community/datetimepicker";
 import axios from "axios";
 import { connect } from "react-redux";
 import { loadStories } from "../redux/actions/storyActions";

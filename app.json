@@ -3,7 +3,7 @@
     "privacy": "unlisted",
     "name": "thearqive",
     "slug": "thearqive",
-    "version": "1.0.2",
+    "version": "1.3.1",
     "orientation": "portrait",
     "icon": "./app/assets/arqive_app_icon-01.png",
     "splash": {
@@ -12,7 +12,8 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/3c01de82-e217-4958-b511-5c53f5aa6526"
     },
     "assetBundlePatterns": [
       "**/*",
@@ -20,29 +21,29 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.thearqive.thearqive",
-      "config": {
-        "googleMapsApiKey": "AIzaSyANOJKZ9xXEXtkmeWkqzUmUMNz5uzmdqs0"
-      }
+      "buildNumber": "21",
+      "bundleIdentifier": "com.thearqive.thearqive"
     },
     "android": {
       "softwareKeyboardLayoutMode": "pan",
       "package": "com.thearqive.mobile",
-      "useNextNotificationsApi": true,
-      "versionCode": 14,
+      "versionCode": 21,
       "permissions": [
         "ACCESS_COARSE_LOCATION",
         "ACCESS_FINE_LOCATION",
         "FOREGROUND_SERVICE"
-      ],
-      "config": {
-        "googleMaps": {
-          "apiKey": "AIzaSyANOJKZ9xXEXtkmeWkqzUmUMNz5uzmdqs0"
-        }
-      }
+      ]
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3c01de82-e217-4958-b511-5c53f5aa6526"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }

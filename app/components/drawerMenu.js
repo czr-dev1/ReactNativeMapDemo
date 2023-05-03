@@ -46,6 +46,13 @@ function DrawerMenu(props) {
         />
         <ModalOpener
           {...props}
+          name="privacy policy"
+          icon="tos"
+          isMapScreen={true}
+          navigateTo="privacyModal"
+        />
+        <ModalOpener
+          {...props}
           name="credits"
           icon="credits"
           isMapScreen={true}

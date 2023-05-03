@@ -49,6 +49,7 @@ import SupportUsModal from "../modals/supportUsModal";
 import ContactUsModal from "../modals/contactUsModal";
 import FaqsModal from "../modals/faqsModal";
 import TosModal from "../modals/TosModal";
+import privacyModal from "../modals/privacyModal";
 import CreditsModal from "../modals/creditsModal";
 
 import { createIconSetFromIcoMoon } from "@expo/vector-icons";
@@ -263,6 +264,12 @@ function ProfileDrawerScreen() {
                 icon='memo-circle-info'
                 navigateTo='TosModal'
               />
+               <ModalOpener
+                {...props}
+                name='privacy policy'
+                icon='memo-circle-info'
+                navigateTo='privacyModal'
+              />
               <ModalOpener
                 {...props}
                 name='credits'
@@ -392,6 +399,7 @@ function NeedAuthStackScreen() {
       <NeedAuthStack.Screen name='ContactUsModal' component={ContactUsModal} />
       <NeedAuthStack.Screen name='FaqsModal' component={FaqsModal} />
       <NeedAuthStack.Screen name='TosModal' component={TosModal} />
+      <NeedAuthStack.Screen name='privacyModal' component={privacyModal} />
       <NeedAuthStack.Screen name='CreditsModal' component={CreditsModal} />
       <NeedAuthStack.Screen
         name='UserProfileModal'
@@ -487,6 +495,8 @@ function AppStackScreen() {
       <AppStack.Screen name='FaqsModal' component={FaqsModal} />
       <AppStack.Screen name='CreditsModal' component={CreditsModal} />
       <NeedAuthStack.Screen name='TosModal' component={TosModal} />
+      <NeedAuthStack.Screen name='privacyModal' component={privacyModal} />
+      <AppStack.Screen name='privacyModal' component={privacyModal} />
       <AppStack.Screen name='EditStoryModal' component={EditStoryModal} />
       <AppStack.Screen
         name='UserProfileModal'
